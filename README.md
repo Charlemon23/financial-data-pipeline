@@ -1,22 +1,30 @@
-# Financial Data Pipeline
+# Market Data Pipeline
 
-A Python-based pipeline for downloading, cleaning, and storing historical financial market data.  
-Built for traders, analysts, and researchers who need clean, structured datasets for backtesting or analysis.
+A production-ready Python tool for fetching, cleaning, and storing OHLCV market data from **Yahoo Finance** (equities, ETFs, FX) and **CoinGecko** (cryptocurrencies).
+
+The pipeline stores the **asset symbol** alongside each data point, supports **daily, hourly, and minute intervals**, and saves data in **CSV or Parquet** format for downstream analytics.
+
+---
 
 ## Features
-- Download OHLCV data from Yahoo Finance.
-- Automatically clean and normalize datasets.
-- Store processed data in a SQLite database.
-- Modular functions for easy integration into other projects.
+- **Multiple Data Providers**:
+  - **Yahoo Finance** for equities, ETFs, FX
+  - **CoinGecko** for crypto assets
+- **Automatic Symbol Storage** in dataset
+- **Data Cleaning**:
+  - Removes NaNs
+  - Deduplicates timestamps
+- **Multiple Formats**:
+  - CSV
+  - Parquet
+- **Organized Output**:
+  - Equities saved to `/data/equities/`
+  - Crypto saved to `/data/crypto/`
 
-## Technologies
-- Python
-- pandas
-- yfinance
-- SQLite
+---
 
 ## Installation
-Clone the repository:
 ```bash
-git clone https://github.com/Charlemon23/financial-data-pipeline.git
-cd financial-data-pipeline
+git clone https://github.com/<your-username>/market-data-pipeline.git
+cd market-data-pipeline
+pip install -r requirements.txt
