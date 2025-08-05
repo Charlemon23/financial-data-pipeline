@@ -1,5 +1,3 @@
-# Market Data Pipeline
-
 A production-ready Python tool for fetching, cleaning, and storing OHLCV market data from **Yahoo Finance** (equities, ETFs, FX) and **CoinGecko** (cryptocurrencies).
 
 The pipeline stores the **asset symbol** alongside each data point, supports **daily, hourly, and minute intervals**, and saves data in **CSV or Parquet** format for downstream analytics.
