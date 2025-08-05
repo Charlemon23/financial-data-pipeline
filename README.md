@@ -1,14 +1,22 @@
 # Financial Data Pipeline
 
-Python scripts for ingesting, cleaning, and storing large financial datasets.
+A Python-based pipeline for downloading, cleaning, and storing historical financial market data.  
+Built for traders, analysts, and researchers who need clean, structured datasets for backtesting or analysis.
 
 ## Features
-- Clean, modular Python code
-- Ready-to-run scripts
-- Example datasets included
+- Download OHLCV data from Yahoo Finance.
+- Automatically clean and normalize datasets.
+- Store processed data in a SQLite database.
+- Modular functions for easy integration into other projects.
 
-## Getting Started
+## Technologies
+- Python
+- pandas
+- yfinance
+- SQLite
+
+## Installation
+Clone the repository:
 ```bash
-pip install -r requirements.txt
-python main.py
-```
+git clone https://github.com/Charlemon23/financial-data-pipeline.git
+cd financial-data-pipeline
